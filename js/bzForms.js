@@ -93,11 +93,11 @@
             });
             continue;
           }
-          /*if (field.type === 'date') {
+          if (field.type === 'date') {
             $('#' + id).pickadate({
               format: 'dd.mm.yyyy'
             });
-          }*/
+          }
           manifest.ui['#' + id] = {
             bind: field.id,
             check: createValidationFunc(field)
